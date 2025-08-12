@@ -3,36 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Expense Tracker</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
-        <h1>expense tracker</h1>
+        <header class="app-header">
+            <h1>💰 Expense Tracker</h1>
+            <p class="subtitle">Track your income and expenses with ease</p>
+        </header>
 
-        <div class="balance">
-            <h2>Balance: $ <span id="balance">0</span></h2>
+        <div class="balance-card">
+            <div class="balance-info">
+                <h2>Total Balance</h2>
+                <div class="balance-amount">$<span id="balance">0</span></div>
+            </div>
         </div>
 
-        <div class="input-group">
-            <input type="text" id="description" placeholder="enter description">
-            <input type="number" id="amount" placeholder="amount">
-            <select id="type">
-                <option value="income">Income</option>
-                <option value="expense">Expense</option>
-            </select>
-            <button onclick="addTransaction()">Add</button>
+        <div class="input-section">
+            <h3>Add New Transaction</h3>
+            <div class="input-group">
+                <div class="input-row">
+                    <input type="text" id="description" placeholder="Transaction description" class="form-input">
+                    <input type="number" id="amount" placeholder="Amount" class="form-input">
+                </div>
+                <div class="input-row">
+                    <select id="type" class="form-select">
+                        <option value="income">➕ Income</option>
+                        <option value="expense">➖ Expense</option>
+                    </select>
+                    <button onclick="addTransaction()" class="btn-primary">Add Transaction</button>
+                </div>
+            </div>
         </div>
 
-        <div class="transaction">
-            <h3>Transaction</h3>
-            <ul id="transaction-list"></ul>
+        <div class="transactions-section">
+            <h3>Recent Transactions</h3>
+            <div class="transaction-list" id="transaction-list">
+                <!-- Transactions will be added here -->
+            </div>
         </div>
 
-        <canvas id="expenseChart"></canvas>
+        <div class="chart-section">
+            <h3>Financial Overview</h3>
+            <div class="chart-container">
+                <canvas id="expenseChart"></canvas>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
