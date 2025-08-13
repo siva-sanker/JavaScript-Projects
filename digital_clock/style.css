@@ -1,20 +1,16 @@
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 99vh; */
-    background-color: black;
-    color: gold;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  background-color: black;
+  color: gold;
+  font-family: 'Poppins', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
-.clock{
-    margin: 20% auto;
-    font-size: 61px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-}
-span{
-    padding: 11px;
-    transition: transform 0.2s ease-in-out;
+
+.clock {
+  font-size: 4rem;
 }

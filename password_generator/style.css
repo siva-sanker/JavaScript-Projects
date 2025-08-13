@@ -1,0 +1,66 @@
+/* Retro theme for password generator */
+
+body {
+  background: #f0e7d8; /* soft warm beige */
+  font-family: 'Courier New', Courier, monospace;
+  color: #4a4537;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  margin: 0;
+  user-select: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 0 #a79e87;
+}
+
+#password {
+  width: 320px;
+  padding: 12px 15px;
+  font-size: 1.4rem;
+  border: 2px solid #7a6f4a;
+  border-radius: 6px;
+  background: #f9f5e9;
+  color: #4a4537;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: inset 2px 2px 4px #b8af91;
+  margin-bottom: 20px;
+  user-select: text;
+}
+
+button {
+  background: #d7cfa3;
+  border: 2px solid #7a6f4a;
+  border-radius: 6px;
+  color: #4a4537;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.1rem;
+  padding: 12px 25px;
+  margin: 0 10px 20px 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 #7a6f4a;
+  transition: background 0.2s ease;
+  user-select: none;
+}
+
+button:hover {
+  background: #bdb07a;
+}
+
+button:active {
+  background: #9e9152;
+  box-shadow: inset 2px 2px 4px #7a6f4a;
+}
+
+#success {
+  font-size: 1rem;
+  color: #4a4537;
+  min-height: 1.4em;
+  font-weight: 600;
+}

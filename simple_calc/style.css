@@ -1,0 +1,67 @@
+/* Retro theme without neon */
+
+body {
+  background: #e0d4b7; /* beige-ish old paper color */
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #3a3a3a;
+}
+
+.calculator {
+  background: #cfc3a6; /* slightly darker beige */
+  border: 3px solid #7a6f4a; /* dark olive border */
+  border-radius: 8px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 3px 3px 0 #7a6f4a; /* subtle drop shadow */
+}
+
+#display {
+  width: 100%;
+  height: 50px;
+  background: #f8f1d4; /* pale yellow */
+  border: 2px solid #7a6f4a;
+  color: #3a3a3a;
+  font-size: 24px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: right;
+  border-radius: 4px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  box-shadow: inset 1px 1px 0 #fff;
+}
+
+.buttons {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  background: #d6cba4; /* light tan */
+  border: 2px solid #7a6f4a;
+  color: #3a3a3a;
+  font-size: 18px;
+  padding: 12px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 2px 2px 0 #7a6f4a;
+  user-select: none;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #bdb07a; /* darker tan */
+}
+
+button:active {
+  background: #9e9152; /* even darker on press */
+  box-shadow: inset 1px 1px 3px #7a6f4a;
+}

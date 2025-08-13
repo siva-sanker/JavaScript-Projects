@@ -25,8 +25,8 @@ function displayNotes(){
         let noteDiv=document.createElement("div");
         noteDiv.classList.add("note");
         noteDiv.innerHTML=`
-        <p>${note}</p>
-        <button class="deleteBtn" onclick="deleteNotes(${index})">Delete</button>
+            <p>${note}</p>
+            <button class="deleteBtn" onclick="deleteNotes(${index})">Delete</button>
         `;
         notesContainer.appendChild(noteDiv);
     });
