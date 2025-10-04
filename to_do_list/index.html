@@ -3,19 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To DO</title>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-  <h2>To do list</h2>
-  <input type="text" placeholder="Enter a task" id="taskInput"/>
-  <button onclick="addTask()">Add Task</button>
-  <div class="taskListContainer">
-    <ul id="taskList"></ul>
+  <div class="container">
+      <div class="header">
+          <h2>To-Do List</h2>
+          <div class="task-count" id="taskCount">0 tasks</div>
+      </div>
+      
+      <div class="input-section">
+          <input type="text" placeholder="Enter a new task..." id="taskInput">
+          <button class="add-btn" onclick="addTask()">
+              <i class="fas fa-plus"></i>
+          </button>
+      </div>
+      
+      <div class="taskListContainer">
+          <ul id="taskList"></ul>
+      </div>
   </div>
-</div>
+
+  <!-- Edit Task Modal -->
+  <div class="modal-overlay" id="editModal">
+      <div class="modal">
+          <div class="modal-header">
+              <h3>Edit Task</h3>
+              <button class="close-btn" onclick="closeEditModal()">
+                  <i class="fas fa-times"></i>
+              </button>
+          </div>
+          <div class="modal-body">
+              <input type="text" id="editTaskInput" placeholder="Edit your task...">
+          </div>
+          <div class="modal-footer">
+              <button class="cancel-btn" onclick="closeEditModal()">Cancel</button>
+              <button class="save-btn" onclick="saveEditedTask()">Save Changes</button>
+          </div>
+      </div>
+  </div>
+
+  <!-- Toast Notifications Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
   <script src="script.js"></script>
 </body>
-
 </html>
