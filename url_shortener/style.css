@@ -78,6 +78,7 @@ button {
   font-weight: 700;
   font-size: 1.1rem;
   padding: 12px 30px;
+  margin-bottom: 20px;
   border-radius: 6px;
   cursor: pointer;
   text-transform: uppercase;

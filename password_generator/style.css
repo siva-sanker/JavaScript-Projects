@@ -19,7 +19,7 @@ h1 {
   text-shadow: 1px 1px 0 #a79e87;
 }
 
-#password {
+#password, #pwdlength {
   width: 320px;
   padding: 12px 15px;
   font-size: 1.4rem;

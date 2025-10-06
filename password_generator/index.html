@@ -9,9 +9,12 @@
 <body>
     
     <h1>Random Password Generator</h1>
+    <input type="number" id="pwdlength" placeholder="Enter length of password" required> <br>
     <input type="text" id="password" readonly> <br>
-    <button onclick="generatePassword()">Generate Password</button>
-    <button onclick="copyPassword()">Copy to Clipboard</button>
+    <div class="container" style="display: flex; flex-direction: row;">
+        <button onclick="generatePassword()">Generate Password</button>
+        <button onclick="copyPassword()">Copy to Clipboard</button>
+    </div>
     <p id="success"></p>
 
     <script src="script.js"></script>
